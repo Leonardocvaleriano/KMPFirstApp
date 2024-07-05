@@ -1,5 +1,4 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
+ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -68,6 +67,9 @@ android {
         compose = true
     }
     dependencies {
+//
+//        debugImplementation(libs.ui.tooling)
+//        implementation(libs.ui.tooling.preview)
         debugImplementation(compose.uiTooling)
     }
 }
